@@ -89,3 +89,12 @@ function sumTotal(numbers) {
 
 const resultSumTotal = sumTotal([1, 3, 4, 5]);
 console.log(resultSumTotal);
+
+// problem -7: Write a function that returns all even numbers from a given array.
+
+function evenNumbers(numbers) {
+  const evens = numbers.filter((num) => num % 2 === 0);
+  return evens;
+}
+const resultEvenNumbers = evenNumbers([1, 2, 3, 4, 5, 6, 10]);
+console.log(resultEvenNumbers);
