@@ -44,5 +44,22 @@ function palindromeString(string) {
   return isPalindrome;
 }
 
-const resultPalindromeString = palindromeString("makam");
+const resultPalindromeString = palindromeString("mom");
 console.log(resultPalindromeString);
+
+// problem 4: Write a function that takes an array of numbers and returns the largest number.
+
+function maxNumber(numbers) {
+  //   const max = Math.max(...numbers);
+  let max = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+    if (max < element) {
+      max = element;
+    }
+  }
+  return max;
+}
+
+const resultMaxNumber = maxNumber([125, 15, 3, 85]);
+console.log(resultMaxNumber);
