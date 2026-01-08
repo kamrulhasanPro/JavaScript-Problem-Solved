@@ -122,3 +122,20 @@ function factorialNumber(number) {
 }
 const resultFactorialNumber = factorialNumber(7);
 console.log(resultFactorialNumber);
+
+// problem -10: Write a function that prints numbers from 1 to 20.
+
+function PingPong() {
+  for (let number = 1; number <= 20; number++) {
+    if (number % 3 === 0 && number % 5 === 0) {
+      console.log("PingPong");
+    } else if (number % 3 === 0) {
+      console.log("Ping");
+    } else if (number % 5 === 0) {
+      console.log("Pong");
+    } else {
+      console.log(number);
+    }
+  }
+}
+PingPong();
