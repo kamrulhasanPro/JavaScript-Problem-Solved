@@ -63,3 +63,20 @@ function maxNumber(numbers) {
 
 const resultMaxNumber = maxNumber([125, 15, 3, 85]);
 console.log(resultMaxNumber);
+
+// problem -5: Write a function that removes all duplicate numbers from an array.
+
+function removeDuplicate(numbers) {
+  const unique = [];
+  for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+    if (!unique.includes(element)) {
+      unique.push(element);
+    }
+  }
+  return unique;
+}
+
+const resultRemoveDuplicate = removeDuplicate([1, 2, 2, 3, 4, 4]);
+console.log(resultRemoveDuplicate);
+
