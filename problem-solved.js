@@ -98,3 +98,15 @@ function evenNumbers(numbers) {
 }
 const resultEvenNumbers = evenNumbers([1, 2, 3, 4, 5, 6, 10]);
 console.log(resultEvenNumbers);
+
+// problem -8: Write a function that capitalizes the first letter of each word in a string.
+
+function upperFirstLetter(sentence) {
+  const capitalizeWord = sentence
+    .split(" ")
+    .map((word) => word.slice(0, 1).toUpperCase() + word.slice(1))
+    .join(" ");
+  return capitalizeWord;
+}
+const resultUpperFirstLetter = upperFirstLetter("hey world hwoe ");
+console.log(resultUpperFirstLetter);
