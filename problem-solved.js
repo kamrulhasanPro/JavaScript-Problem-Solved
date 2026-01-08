@@ -110,3 +110,15 @@ function upperFirstLetter(sentence) {
 }
 const resultUpperFirstLetter = upperFirstLetter("hey world hwoe ");
 console.log(resultUpperFirstLetter);
+
+// problem -9: Write a function that calculates the factorial of a number using a loop.
+
+function factorialNumber(number) {
+  let factorial = 1;
+  for (let i = number; i > 0; i--) {
+    factorial *= i;
+  }
+  return factorial;
+}
+const resultFactorialNumber = factorialNumber(7);
+console.log(resultFactorialNumber);
