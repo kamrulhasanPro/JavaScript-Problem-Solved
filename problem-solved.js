@@ -80,3 +80,12 @@ function removeDuplicate(numbers) {
 const resultRemoveDuplicate = removeDuplicate([1, 2, 2, 3, 4, 4]);
 console.log(resultRemoveDuplicate);
 
+// problem -6: Write a function that returns the sum of all numbers in an array.
+
+function sumTotal(numbers) {
+  const sum = numbers.reduce((pre, next) => pre + next, 0);
+  return sum;
+}
+
+const resultSumTotal = sumTotal([1, 3, 4, 5]);
+console.log(resultSumTotal);
