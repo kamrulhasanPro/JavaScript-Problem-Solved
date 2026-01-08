@@ -2,7 +2,6 @@
 
 function reversedString(string) {
   const reversed = string.split("").reverse().join("");
-  console.log(reversed);
   return reversed;
 }
 
@@ -26,5 +25,24 @@ function countVowels(string) {
   }
   return count;
 }
-const resultVowelsCount = countVowels("kamrul hasan");
+const resultVowelsCount = countVowels("kamrul hasaa");
 console.log(resultVowelsCount);
+
+// problem -3: Write a function that checks if a string is a palindrome (reads the same forward and backward).
+
+function palindromeString(string) {
+  // use beginner way
+  let reverse = "";
+  for (let i = string.length; i > 0; i--) {
+    reverse += string[i - 1];
+  }
+
+  let isPalindrome = false;
+  if (reverse.toLowerCase() === string.toLowerCase()) {
+    isPalindrome = true;
+  }
+  return isPalindrome;
+}
+
+const resultPalindromeString = palindromeString("makam");
+console.log(resultPalindromeString);
