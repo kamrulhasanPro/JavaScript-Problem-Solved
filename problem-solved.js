@@ -1,14 +1,14 @@
-// problem - 1: Write a function that takes a string and returns it reversed.
+// problem - 1: reverse a string
 
 function reversedString(string) {
   const reversed = string.split("").reverse().join("");
   return reversed;
 }
 
-const resultReversed = reversedString("monir");
-console.log(resultReversed);
+// const resultReversed = reversedString("kamrul");
+// console.log(resultReversed);
 
-// problem - 2: Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
+// problem - 2: count vowel in a string
 
 function countVowels(string) {
   const vowels = "aeiou";
@@ -25,10 +25,10 @@ function countVowels(string) {
   }
   return count;
 }
-const resultVowelsCount = countVowels("kamrul hasaa");
-console.log(resultVowelsCount);
+// const resultVowelsCount = countVowels("kamrul hasaa");
+// console.log(resultVowelsCount);
 
-// problem -3: Write a function that checks if a string is a palindrome (reads the same forward and backward).
+// problem -3: palindrome check
 
 function palindromeString(string) {
   // use beginner way
@@ -44,10 +44,10 @@ function palindromeString(string) {
   return isPalindrome;
 }
 
-const resultPalindromeString = palindromeString("mom");
-console.log(resultPalindromeString);
+// const resultPalindromeString = palindromeString("madam");
+// console.log(resultPalindromeString);
 
-// problem 4: Write a function that takes an array of numbers and returns the largest number.
+// problem 4: find maximum number from an array of number.
 
 function maxNumber(numbers) {
   //   const max = Math.max(...numbers);
@@ -61,10 +61,10 @@ function maxNumber(numbers) {
   return max;
 }
 
-const resultMaxNumber = maxNumber([125, 15, 3, 85]);
-console.log(resultMaxNumber);
+// const resultMaxNumber = maxNumber([125, 15, 3, 85, 500]);
+// console.log(resultMaxNumber);
 
-// problem -5: Write a function that removes all duplicate numbers from an array.
+// problem -5: remove duplicate numbers from an array
 
 function removeDuplicate(numbers) {
   const unique = [];
@@ -77,29 +77,29 @@ function removeDuplicate(numbers) {
   return unique;
 }
 
-const resultRemoveDuplicate = removeDuplicate([1, 2, 2, 3, 4, 4]);
-console.log(resultRemoveDuplicate);
+// const resultRemoveDuplicate = removeDuplicate([1, 2, 2, 3, 4, 4]);
+// console.log(resultRemoveDuplicate);
 
-// problem -6: Write a function that returns the sum of all numbers in an array.
+// problem -6: total sum in an array.
 
 function sumTotal(numbers) {
   const sum = numbers.reduce((pre, next) => pre + next, 0);
   return sum;
 }
 
-const resultSumTotal = sumTotal([1, 3, 4, 5]);
-console.log(resultSumTotal);
+// const resultSumTotal = sumTotal([1, 3, 4, 5]);
+// console.log(resultSumTotal);
 
-// problem -7: Write a function that returns all even numbers from a given array.
+// problem -7: even number check
 
 function evenNumbers(numbers) {
   const evens = numbers.filter((num) => num % 2 === 0);
   return evens;
 }
-const resultEvenNumbers = evenNumbers([1, 2, 3, 4, 5, 6, 10]);
-console.log(resultEvenNumbers);
+// const resultEvenNumbers = evenNumbers([1, 2, 3, 4, 5, 6, 10]);
+// console.log(resultEvenNumbers);
 
-// problem -8: Write a function that capitalizes the first letter of each word in a string.
+// problem -8: make fist word first latter a uppercase.
 
 function upperFirstLetter(sentence) {
   const capitalizeWord = sentence
@@ -108,10 +108,10 @@ function upperFirstLetter(sentence) {
     .join(" ");
   return capitalizeWord;
 }
-const resultUpperFirstLetter = upperFirstLetter("hey world hwoe ");
-console.log(resultUpperFirstLetter);
+// const resultUpperFirstLetter = upperFirstLetter("hey world hwoe ");
+// console.log(resultUpperFirstLetter);
 
-// problem -9: Write a function that calculates the factorial of a number using a loop.
+// problem -9: factorial number total.
 
 function factorialNumber(number) {
   let factorial = 1;
@@ -120,8 +120,8 @@ function factorialNumber(number) {
   }
   return factorial;
 }
-const resultFactorialNumber = factorialNumber(7);
-console.log(resultFactorialNumber);
+// const resultFactorialNumber = factorialNumber(7);
+// console.log(resultFactorialNumber);
 
 // problem -10: Write a function that prints numbers from 1 to 20.
 
@@ -138,4 +138,4 @@ function PingPong() {
     }
   }
 }
-PingPong();
+// PingPong();
